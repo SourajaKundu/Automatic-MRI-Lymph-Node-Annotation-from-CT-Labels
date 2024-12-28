@@ -58,7 +58,7 @@ python3 train.py \
     --crop_size 512 \
     --load_size 512 \
     --output_nc 3 \
-    --netg stylegan2
+    --netG stylegan2
 ```
 Additional options can be explored in `options/train_options.py`.
 
@@ -71,7 +71,7 @@ python3 test.py \
     --crop_size 512 \
     --load_size 512 \
     --output_nc 3 \
-    --netg stylegan2
+    --netG stylegan2
 ```
 
 ### Annotation Transfer
