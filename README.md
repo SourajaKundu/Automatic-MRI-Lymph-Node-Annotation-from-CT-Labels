@@ -57,7 +57,8 @@ python3 train.py \
     --input_nc 3 \
     --crop_size 512 \
     --load_size 512 \
-    --output_nc 3
+    --output_nc 3 \
+    --netg stylegan2
 ```
 Additional options can be explored in `options/train_options.py`.
 
@@ -69,7 +70,8 @@ python3 test.py \
     --input_nc 3 \
     --crop_size 512 \
     --load_size 512 \
-    --output_nc 3
+    --output_nc 3 \
+    --netg stylegan2
 ```
 
 ### Annotation Transfer
@@ -77,6 +79,12 @@ The second step of transferring lymph node positions from CT to MRI can be found
 
 ## Checkpoints
 Trained model weights are saved in the `checkpoints/` directory. You can use the same weights for both registration and de-registration in steps 1 and 3, after training only once.
+
+## Changing model to DFMIR
+The few changes that need to be done are 
+1. Use the PatchSampleFDFMIR function instead of PatchSampleF in models/networks.py
+2. Remove loss_super_resolution from self.loss_R in class REGISTRATIONModel of models/registration_model.py
+3. Use the UnetDFMIR class instead of Unet in models/voxelmorph/torchvoxelmorph/networks.py  
 
 ## Citation
 If you use this code, please cite the following papers:
