@@ -1,6 +1,32 @@
 # Automatic MRI Lymph-Node Annotation from CT Labels
 
-This repository contains the official implementation of the paper **"Automatic MRI Lymph-Node Annotation from CT Labels"**, which is currently under revision at *IEEE Access*.
+**Official Implementation**
+
+This repository contains the official implementation of our work on **cross-modality medical image translation, deformable registration, and automatic MRI lymph-node annotation**. Across three publications, we introduce: (1) an improved Residual Vision Transformer GAN for high-fidelity CT→MRI synthesis, (2) a Transformer-based local–global correlation model for accurate cross-modality medical image registration, and (3) a complete three-stage pipeline for generating MRI lymph-node annotations using only CT labels. Together, these works advance the reliability of synthetic MRI generation, the precision of CT–MRI alignment, and the automation of lymph-node labeling in clinical imaging.
+
+---
+
+## 📚 Publications
+
+### **1) Improved Residual Vision Transformer for CT→MRI Translation**
+
+Souraja Kundu, Yuji Iwahori, Manas Kamal Bhuyan, Manish Bhatt, Akira Ouchi, Yasuhiro Shimizu
+*TransAI 2023, Oral Presentation, LA, USA*
+[https://ieeexplore.ieee.org/document/10387640](https://ieeexplore.ieee.org/document/10387640)
+
+### **2) Cross-Modality Medical Image Registration with Local-Global Spatial Correlation**
+
+Souraja Kundu, Yuji Iwahori, Manas Kamal Bhuyan, Manish Bhatt, Boonserm Kijsirikul, Aili Wang, Akira Ouchi, Yasuhiro Shimizu
+*ICPR 2024, Oral (Top 6%), Kolkata, India*
+[https://link.springer.com/chapter/10.1007/978-3-031-78195-7_8](https://link.springer.com/chapter/10.1007/978-3-031-78195-7_8)
+
+### **3) Automatic MRI Lymph-Node Annotation from CT Labels**
+
+Souraja Kundu, Yuji Iwahori, M.K. Bhuyan, Manish Bhatt, Boonserm Kijsirikul, Aili Wang, Akira Ouchi, Yasuhiro Shimizu
+*IEEE Access 2025*
+[https://ieeexplore.ieee.org/document/10855406](https://ieeexplore.ieee.org/document/10855406)
+
+---
 
 ## Overview
 
